@@ -1,3 +1,3 @@
 <?php
-
-echo 'hello world v4';
+header("Content-Type: text/plain");
+echo "hello world v5";
