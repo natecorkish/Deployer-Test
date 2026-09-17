@@ -1,3 +1,4 @@
 <?php
 header("Content-Type: text/plain");
-echo "hello world v9";
+http_response_code(503);
+echo "preview failure fixture";
