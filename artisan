@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+$command = $argv[1] ?? '';
+
+if (in_array($command, ['queue:work', 'schedule:work'], true)) {
+    while (true) {
+        sleep(30);
+    }
+}
+
+if ($command === 'list') {
+    echo "storage:link\nconfig:cache\nroute:cache\nview:cache\nevent:cache\nmigrate\ndb:seed\nqueue:work\nschedule:work\n";
+}
+
+exit(0);
